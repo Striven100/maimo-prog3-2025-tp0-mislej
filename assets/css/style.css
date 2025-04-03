@@ -1,0 +1,157 @@
+.kanit-light {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.kanit-regular {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kanit-bold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.berkshire-swash-regular {
+  font-family: "Berkshire Swash", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header, footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5em;
+  background-color: forestgreen;
+}
+
+header ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+header ul li a:hover {
+  background-color: #ff6600;
+}
+
+.hero {
+  height: 20em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+}
+
+.recetas_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.receta {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.receta img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.receta h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.ver-mas {
+  display: inline-block;
+  padding: 6px 10px;
+  background: #ff6600;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.ver-mas:hover {
+  background: #cc5500;
+}
+
+.receta-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.receta-container img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.receta-container h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.receta-container p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.receta-container ul, .receta-container ol {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.receta-container ul li, .receta-container ol li {
+  margin-bottom: 5px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: forestgreen;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
