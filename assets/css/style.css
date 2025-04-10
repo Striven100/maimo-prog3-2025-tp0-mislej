@@ -1,25 +1,8 @@
-.kanit-light {
-  font-family: "Kanit", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.kanit-regular {
-  font-family: "Kanit", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.kanit-bold {
-  font-family: "Kanit", sans-serif;
+body {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-style: normal;
-}
-
-.berkshire-swash-regular {
-  font-family: "Berkshire Swash", serif;
-  font-weight: 400;
-  font-style: normal;
+  background-color: #111;
+  color: #eee;
 }
 
 * {
@@ -28,23 +11,29 @@
   box-sizing: border-box;
 }
 
-header, footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 5em;
-  background-color: forestgreen;
-}
-
-header ul {
+header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding: 10px 5em;
+  background-color: #000;
+}
+
+header nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav ul {
+  display: flex;
   gap: 20px;
   list-style: none;
 }
 
-header ul li a {
+header nav ul li a,
+header nav ul li a:visited,
+header nav ul li a:link {
   text-decoration: none;
   color: white;
   font-weight: bold;
@@ -53,8 +42,8 @@ header ul li a {
   transition: 0.3s;
 }
 
-header ul li a:hover {
-  background-color: #ff6600;
+header nav ul li a:hover {
+  background-color: #0055ff;
 }
 
 .hero {
@@ -62,22 +51,28 @@ header ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: bisque;
+  background-color: #222;
+}
+
+.hero h1 {
+  font-size: 3.5em;
+  color: #fff;
 }
 
 .recetas_grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 40px;
 }
 
 .receta {
-  background: #fff;
-  padding: 10px;
+  background: #1a1a1a;
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   text-align: center;
+  color: #fff;
 }
 
 .receta img {
@@ -87,14 +82,14 @@ header ul li a:hover {
 }
 
 .receta h3 {
-  margin: 10px 0;
-  font-size: 18px;
+  margin: 15px 0;
+  font-size: 20px;
 }
 
 .ver-mas {
   display: inline-block;
-  padding: 6px 10px;
-  background: #ff6600;
+  padding: 8px 12px;
+  background: #0055ff;
   color: white;
   border-radius: 5px;
   font-size: 14px;
@@ -102,17 +97,18 @@ header ul li a:hover {
 }
 
 .ver-mas:hover {
-  background: #cc5500;
+  background: #003399;
 }
 
 .receta-container {
   max-width: 800px;
   margin: 20px auto;
-  padding: 20px;
-  background-color: white;
+  padding: 30px;
+  background-color: #1a1a1a;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   text-align: center;
+  color: #eee;
 }
 
 .receta-container img {
@@ -122,12 +118,12 @@ header ul li a:hover {
 }
 
 .receta-container h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 28px;
+  margin-bottom: 15px;
 }
 
 .receta-container p {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
@@ -141,17 +137,21 @@ header ul li a:hover {
 }
 
 button {
-  margin-top: 10px;
-  padding: 8px 15px;
-  background-color: forestgreen;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0055ff;
   color: white;
   border: none;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 15px;
   border-radius: 5px;
   transition: 0.3s;
 }
 
 button:hover {
-  background-color: darkgreen;
+  background-color: #003399;
+}
+
+a {
+  color: white;
 }
